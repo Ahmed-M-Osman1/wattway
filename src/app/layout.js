@@ -36,8 +36,8 @@ const kaushan = Kaushan_Script({
 })
 
 export const metadata = {
-  title: 'WattWay - UAE EV aggregator',
-  description: 'WattWay - UAE EV aggregator',
+  title: 'WattWay - UAE 1st EV Charging Aggregator',
+  description: 'WattWay - UAE 1st EV Charging Aggregator',
 }
 
 export default function RootLayout({ children }) {

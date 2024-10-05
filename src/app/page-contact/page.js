@@ -4,13 +4,14 @@ import { FiPhone, FiMail, FiMapPin } from '../assets/icons/vander';
 import FooterSeven from "../components/footer/footerSeven";
 import ScrollTop from "../components/scrollTop";
 import NavbarTwo from "@/app/components/navbar/navbarTwo";
+import Footer from "@/app/components/footer/footer";
 
 export default function Contact() {
     return (
         <>
             <NavbarTwo navClass="defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
             <section className="bg-half-170 d-table w-100" style={{ backgroundImage: "url('/images/bg/EV.png')" }}>
-                <div className="bg-overlay bg-primary .bg-gradient opacity-5"></div>
+                <div className="bg-overlay bg-new bg-gradient opacity-8"></div>
                 <div className="container">
                     <div className="row mt-5 justify-content-center">
                         <div className="col-12">
@@ -109,7 +110,7 @@ export default function Contact() {
 
                                         <div className="col-12">
                                             <div className="mb-3">
-                                                <label className="form-label">Comments <span className="text-danger">*</span></label>
+                                                <label className="form-label">Description<span className="text-danger">*</span></label>
                                                 <textarea name="comments" id="comments" rows="4" className="form-control" placeholder="Message :"></textarea>
                                             </div>
                                         </div>
@@ -126,21 +127,8 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-
-                {/*<div className="container-fluid mt-100 mt-60">*/}
-                {/*    <div className="row">*/}
-                {/*        <div className="col-12 p-0">*/}
-                {/*            <div className="card map border-0">*/}
-                {/*                <div className="card-body p-0">*/}
-                {/*                    <iframe src="https://www.google.com/maps" style={{ border: '0' }} title="WattWay" allowFullScreen></iframe> */}
-                {/*                    /!* Update with actual Google Maps embed URL *!/*/}
-                {/*                </div>*/}
-                {/*            </div>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
             </section>
-            <FooterSeven />
+            <Footer />
             <ScrollTop />
         </>
     )
