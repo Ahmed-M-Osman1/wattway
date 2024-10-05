@@ -37,9 +37,9 @@ export default function NavbarTwo({ navClass, manuClass, navDark }) {
             <header id="topnav" className={`${scroll ? "nav-sticky" : ""} ${navClass}`}>
                 <div className="container">
                     <Link className="logo" href="/">
-                        <span className="logo-light-mode">
-                            <Image src='/images/logo.png' width={60} height={60} className="l-dark" alt=""/>
-                            <Image src='/images/logo.png' width={60} height={60} className="l-light" alt=""/>
+                        <span className="logo-light-mode text-center">
+                            <Image src='/images/logo.png' width={60} height={60} alt=""/>
+                            {!scroll && <p className="text-white fs-6" >WattWay</p>}
                         </span>
                         <Image src='/images/logo.png' width={110} height={30} className="logo-dark-mode" alt=""/>
                     </Link>
@@ -58,26 +58,25 @@ export default function NavbarTwo({ navClass, manuClass, navDark }) {
                     <div id="navigation" style={{ display: isMenu ? 'block' : 'none' }}>
                         <ul className={manuClass}>
                             <li>
-                                {/* Use native anchor links for smooth scrolling */}
-                                <Link href="/#hero-section" onClick={() => setisMenu(false)}>Home</Link>
+                                <Link className={`${isMenu || scroll ? "text-black" : "text-white"}`} href="/#hero-section" onClick={() => setisMenu(false)}>Home</Link>
                             </li>
                             <li>
-                                <Link href="/#services" onClick={() => setisMenu(false)}>Services</Link>
+                                <Link className={`${isMenu || scroll ? "text-black" : "text-white"}`} href="/#services" onClick={() => setisMenu(false)}>Services</Link>
                             </li>
                             <li>
-                                <Link href="/#about" onClick={() => setisMenu(false)}>About</Link>
+                                <Link className={`${isMenu || scroll ? "text-black" : "text-white"}`} href="/#about" onClick={() => setisMenu(false)}>About</Link>
                             </li>
                             <li>
-                                <Link href="/#reviews" onClick={() => setisMenu(false)}>Reviews</Link>
+                                <Link className={`${isMenu || scroll ? "text-black" : "text-white"}`} href="/#solution" onClick={() => setisMenu(false)}>solution</Link>
                             </li>
                             <li>
-                                <Link href="/#faq" onClick={() => setisMenu(false)}>Faq</Link>
+                                <Link className={`${isMenu || scroll ? "text-black" : "text-white"}`} href="/#faq" onClick={() => setisMenu(false)}>Faq</Link>
                             </li>
                             <li>
-                                <Link href="/#download" onClick={() => setisMenu(false)}>Download</Link>
+                                <Link className={`${isMenu || scroll ? "text-black" : "text-white"}`} href="/#download" onClick={() => setisMenu(false)}>Download</Link>
                             </li>
                             <li>
-                                <Link href="/page-contact" className="sub-menu-item" onClick={() => setisMenu(false)}>Contact us</Link>
+                                <Link className={`${isMenu || scroll ? "text-black" : "text-white"}`} href="/page-contact" onClick={() => setisMenu(false)}>Contact us</Link>
                             </li>
                         </ul>
                     </div>

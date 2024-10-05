@@ -1,6 +1,13 @@
 //
 // _blog.scss
 //
+
+.btn-primary-v2{
+    background-color: #EBF1FE;
+    color: #5099F4;
+}
+
+
 .blog {
     @each $name,
     $value in $colors {
@@ -75,7 +82,7 @@
         right: 0;
         border-top: 1px dashed;
     }
-    
+
     .blog-icon{
         position: relative;
         width: 50px;
@@ -103,7 +110,7 @@
                 position: relative;
             }
         }
-        .widget-search, .searchform { 
+        .widget-search, .searchform {
             input[type="text"] {
                 box-shadow: none;
                 padding: 12px 15px;

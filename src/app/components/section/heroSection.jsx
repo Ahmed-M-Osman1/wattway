@@ -13,8 +13,8 @@ export default function HeroSection() {
     <h1 className="heading text-white title-dark mb-4 font-weight-bold text-center">Introducing WattWay</h1>
         <p className="para-desc text-white-50 text-center">Creating pathways to a sustainable future, offering cutting-edge solutions to support your EV journey.</p>
     <div className="mt-4 pt-2 text-center">
-        <Link href="#download" className="btn btn-primary me-3">Download now</Link>
-        <Link href="/page-contact" className="btn btn-primary me-1">Contact us</Link>
+        <Link href="#download" className="btn btn-primary-v2 me-3">Download now</Link>
+        <Link href="/page-contact" className="btn btn-primary-v2 me-1">Contact us</Link>
     </div>
     </div>
     </div>

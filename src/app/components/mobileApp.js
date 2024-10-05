@@ -22,9 +22,9 @@ export default function MobileApp() {
                 <div className="col-lg-7 col-md-6 order-md-2 order-1">
                     <div className="ms-lg-5">
                         <div className="section-title">
-                            <h4 className="title mb-4 text-center">Available for your any Smartphone</h4>
+                            <h4 className="title mb-4 text-center">Powering Your EV Journey and Download WattWay App Now!</h4>
                             <p className="text-muted para-desc mb-0">
-                                Discover and manage all EV charging stations in one app—providing real-time updates, easy booking, and seamless charging experiences across the UAE.
+                                Seamlessly discover and manage EV charging stations through WattWay—your go-to app for real-time updates, smart booking, and effortless charging experiences across the UAE.
                             </p>
 
                             {/* Centering the buttons */}
